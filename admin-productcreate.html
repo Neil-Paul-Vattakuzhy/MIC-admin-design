@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - New Product              </title>
+    <link rel="stylesheet" href="admin-productcreate.css">
+    <script src="https://kit.fontawesome.com/34b63b38cf.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="sidecon">
+        <div class="sidehead">
+            <div class="usercon">
+                <img src="img/userlogo.jpg" alt="">
+                <div class="userdetails">
+                    <div class="username">Jacob George</div>
+                    <div class="type">admin</div>
+                </div>
+            </div>
+        </div>
+        <div class="sideoptions">
+            <button value="HREF" onclick="location.href='admin-home.html'">Home</button>
+            <button value="HREF" onclick="location.href='admin-statistics.html'">Statistics</button>
+            <button value="HREF" onclick="location.href='admin-productlist.html'">Product List</button>
+            <button value="HREF" onclick="location.href='admin-productcreate.html'">Product Create</button>
+            <button value="HREF" onclick="location.href='admin-orderlist.html'">Order List</button>
+
+            <button value="HREF" onclick="location.href='admin-network.html'">Network</button>
+
+        </div>
+    </div>
+    <div class="adminpage">
+
+        <div class="mainbody">
+            <div class="mainbodyhead">
+                Create a New Product
+            </div>
+            <div class="prodcreate">
+                <div class="prodbasic">
+                    <div class="prodnamecreate">
+                        <input type="text" placeholder="Product Name">
+                    </div>
+                    <div class="proddesc">
+                        <div class="proddeschead">
+                            <span>Description</span>
+                        </div>
+                        <div class="proddescbody">
+                            <div class="prodeditor">
+                                
+                            </div>
+                        </div>
+                        <div class="prodimgup">
+                            <div class="prodimguphead">
+                                <span>Images</span>
+                            </div>
+                            <div class="prodimgupbody" >
+                                <input type="file" name="" multiple style="display: none;" tabindex="-1" id="">
+                                <button>
+
+                                    <div class="prodimgupimg">
+                                        <img src="img/imageicon.png" alt="" >
+                                    </div>
+                                    <div class="prodimguptext">
+                                        <span>Drop or Select file <br> </span>
+                                        <span>Drop file here or click <a href="">browse</a> thorough your machine</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prodadvance">
+                    <div class="miscdetails">
+                        <div class="instock">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                              <span>In Stock</span>
+                        </div>
+                        <div class="prodlabeling">
+                            <div class="prodcodecon">
+                                <input type="number" placeholder="Product Code">
+                            </div>
+                            <div class="prodskucon">
+                                <input type="text" placeholder="Product SKU">
+                            </div>
+                        </div>
+                        <div class="prodclassifycon">
+                            <div class="genderclass">
+                                <div class="genderconhead">
+                                    <span>Gender</span>
+                                </div>
+                                <div class="genderselect">
+                                    <div class="gman ritem"><input type="radio" name="x"><label for="">Men</label></div>
+                                    <div class="gwomen ritem"><input type="radio" name="x"><label for="">Women</label></div>
+                                    <div class="gkids ritem"><input type="radio" name="x"><label for="">Kids</label></div>
+                                </div>
+                            </div>
+                            <div class="categorycon">
+                                <div class="category catitem">
+                                    <select name="" id="">
+                                        <optgroup label="Clothing">
+                                            <option value="">Shirts</option>
+                                            <option value="">T-Shirts</option>
+                                            <option value="">Jeans</option>
+                                            <option value="">Leather</option>
+                                        </optgroup>
+                                        <optgroup label="Tailored">
+                                            <option value="">Suits</option>
+                                            <option value="">Blazers</option>
+                                            <option value="">Trousers</option>
+                                            <option value="">Waistcoats</option>
+                                        </optgroup>
+                                        <optgroup label="Accessories">
+                                            <option value="">Shoes</option>
+                                            <option value="">Backpacks and Bags</option>
+                                            <option value="">Bracelets</option>
+                                            <option value="">Face masks</option>
+                                        </optgroup>
+                                    </select>
+
+                                </div>
+                                <div class="tagcon catitem">
+                                    <select name="" id="">
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        <option value="">blah blah</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricedetails">
+                        <div class="regpricecon pditem">
+                            <input type="text" placeholder="Regular Price" >
+                        </div>
+                        <div class="salepricecon pditem">
+                            <input type="text" placeholder="Sale Price">
+                        </div>
+                        <div class="inctax">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                              <span>Price Include Tax</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="createbtncon">
+                <button>Create Product</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
